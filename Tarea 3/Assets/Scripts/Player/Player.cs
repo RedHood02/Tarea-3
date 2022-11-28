@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 
     [SerializeField] float moveSpeed;
 
+    [SerializeField] Animator playerAnim;
+
 
     // Start is called before the first frame update
     void Start()
