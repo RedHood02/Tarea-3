@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1365d906902984242816edd605771dde
+guid: 9a283c957828a6e4bb5b7c2cf6ae04cb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -128,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player-Sheet_0
+      name: brillo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 320
-        height: 640
+        width: 128.09091
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc986f21af5008946bc10d1533009a56
-      internalID: -1398299452
+      spriteID: 2179457d955373c4aaa8ca271f886450
+      internalID: -999324568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_1
+      name: brillo_1
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 0
-        width: 320
-        height: 640
+        width: 128.09091
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c58ae05b2f91747bea4a4e4de04170
-      internalID: -98531780
+      spriteID: bf61d55bff5a8e441876514dd3070468
+      internalID: 1909998832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_2
+      name: brillo_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128.09091
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db89a890b9d7104e8429e5957f72599
+      internalID: -750982501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brillo_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128.09091
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880b10d66085c1f42a9ee50f330f92ed
+      internalID: 1642416407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brillo_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128.09091
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c49246ee62275949b9936eb303c566c
+      internalID: -678256815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brillo_5
       rect:
         serializedVersion: 2
         x: 640
         y: 0
-        width: 320
-        height: 640
+        width: 128.09091
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61e6b7efbd1ebd54c9666a6676d015b9
-      internalID: -1564331618
+      spriteID: f9311581d74398046a2a16cc433d0964
+      internalID: -893581372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_3
+      name: brillo_6
       rect:
         serializedVersion: 2
-        x: 960
+        x: 768
         y: 0
-        width: 320
-        height: 640
+        width: 128.09091
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +268,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdd5b9f0adffef34ca6a5adb83664211
-      internalID: -324974991
+      spriteID: 3339f3f8b73d57a43b0fb2bdccc93c29
+      internalID: -353274417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_4
+      name: brillo_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128.09091
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0f461764372f3469782dbbc3d69188
+      internalID: 1841521656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brillo_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128.09091
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7097b77202bac34fa024ec13942cd6a
+      internalID: 1544730176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brillo_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128.09091
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfce30df39b78624db45fde60644aa1c
+      internalID: 1261604333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brillo_10
       rect:
         serializedVersion: 2
         x: 1280
         y: 0
-        width: 320
-        height: 640
+        width: 128.09091
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,239 +352,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b03e0d0e31567064b83aed3b1fcf30da
-      internalID: 947428810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 260d9b53409b28c4593426e8bd0176ed
-      internalID: -1719132532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19bb9e12f3d600741a0b60eaa902143e
-      internalID: -553686267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 2240
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 097c391b0eb7fef4c978e0faea202e0b
-      internalID: -1493042222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 2560
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e007ae5e8ad99f44ba90bc1babd90ba9
-      internalID: -1798818445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 2880
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 532ea0b56014fca46b376940ad6e3e67
-      internalID: 795400067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 3200
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af66e2437594f3f4a9cc8215ba2ec345
-      internalID: 1811517012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 3520
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 738b1a7228c261e4382720af3ddd2b30
-      internalID: -689058707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7502b77924dd41d4e96be6f7e5d03f93
-      internalID: -304241711
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 4160
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f1f5af2e61157a4fb1febf889c453a2
-      internalID: 878610800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 4480
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b895a824db68ff543abc3bda6e221477
-      internalID: -990027405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 4800
-        y: 0
-        width: 320
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c87a060d1b71c9d4eaf32edb812e960b
-      internalID: 1902026787
+      spriteID: 6a2b65e356170704eac65c221535533d
+      internalID: -1815900164
       vertices: []
       indices: 
       edges: []
@@ -474,22 +369,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player-Sheet_7: -1493042222
-      player-Sheet_6: -553686267
-      player-Sheet_1: -98531780
-      player-Sheet_0: -1398299452
-      player-Sheet_11: -689058707
-      player-Sheet_2: -1564331618
-      player-Sheet_12: -304241711
-      player-Sheet_13: 878610800
-      player-Sheet_4: 947428810
-      player-Sheet_5: -1719132532
-      player-Sheet_9: 795400067
-      player-Sheet_15: 1902026787
-      player-Sheet_3: -324974991
-      player-Sheet_10: 1811517012
-      player-Sheet_8: -1798818445
-      player-Sheet_14: -990027405
+      brillo_6: -353274417
+      brillo_2: -750982501
+      brillo_7: 1841521656
+      brillo_0: -999324568
+      brillo_10: -1815900164
+      brillo_4: -678256815
+      brillo_5: -893581372
+      brillo_9: 1261604333
+      brillo_1: 1909998832
+      brillo_3: 1642416407
+      brillo_8: 1544730176
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
