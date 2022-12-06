@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Vector2 playerPos;
     [SerializeField] Vector2 newPos;
     [SerializeField] Animator playerAnim;
-
+    [SerializeField] bool isInMinigame;
     private void Start()
     {
         playerPos = gameObject.transform.position;
@@ -16,7 +16,10 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Movement();
+        if(!isInMinigame)
+        {
+            Movement();
+        }
         GetVelocity();
     }
 
@@ -46,4 +49,11 @@ public class PlayerController : MonoBehaviour
         playerPos = gameObject.transform.position;
         playerAnim.SetFloat("velocity", distance);
     }
+
+
+    public void SetIsInMinigame(bool newState)
+    {
+        isInMinigame = newState;
+    }
+
 }
