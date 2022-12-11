@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Armario
+  - Bed
   layers:
   - Default
   - TransparentFX

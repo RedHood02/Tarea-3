@@ -12,11 +12,6 @@ public class Thunder : MonoBehaviour
     [SerializeField] AudioClip thunder2;
     [SerializeField] AudioClip thunder3;
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
-
     private void Start()
     {
         StartCoroutine(ThunderController());

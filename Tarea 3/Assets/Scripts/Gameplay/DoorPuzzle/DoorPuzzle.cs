@@ -9,6 +9,7 @@ public class DoorPuzzle : MonoBehaviour
 
 
     [SerializeField] PlayerController p;
+    [SerializeField] CodeManager c;
 
     [SerializeField] GameObject interactionSparkle;
 
@@ -25,6 +26,7 @@ public class DoorPuzzle : MonoBehaviour
     private void Start()
     {
         p = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        c = gameObject.GetComponent<CodeManager>();
     }
 
 
@@ -68,8 +70,14 @@ public class DoorPuzzle : MonoBehaviour
     {
         canvasMinigame.gameObject.SetActive(false);
         playerInMinigame = false;
+        c.SetClicks(0);
+        c.SetPlayerInput(0);
     }
 
+    private void OnDestroy()
+    {
+        p.SetIsInMinigame(playerInMinigame = false);
+    }
 
     void PlayerChecker()
     {
