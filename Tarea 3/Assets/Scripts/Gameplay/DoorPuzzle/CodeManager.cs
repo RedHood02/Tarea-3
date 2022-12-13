@@ -16,6 +16,9 @@ public class CodeManager : MonoBehaviour
 
     [SerializeField] GameObject nextLevelSector;
 
+    [SerializeField] Animator anim;
+
+
     private void Update()
     {
         if(clicks == 4)
@@ -52,6 +55,12 @@ public class CodeManager : MonoBehaviour
         buttonSFX.PlayOneShot(buttonPress);
     }
 
+    public void Useless()
+    {
+        clicks++;
+        buttonSFX.PlayOneShot(buttonPress);
+    }
+
 
     void Solved()
     {
@@ -69,7 +78,9 @@ public class CodeManager : MonoBehaviour
 
     IEnumerator Unlocked()
     {
-        buttonSFX.PlayOneShot(solutionSFX);
+        anim.Play("Unlocking");
+        yield return new WaitForSeconds(0.2f);
+        //buttonSFX.PlayOneShot(solutionSFX);
         yield return new WaitForSeconds(2.6f);
         nextLevelSector.SetActive(true);
         Destroy(gameObject);
