@@ -7,6 +7,8 @@ public class FirstRoom : MonoBehaviour
     [SerializeField] SpriteRenderer wall1, wall2, wall3;
     [SerializeField] GameObject shelf;
     [SerializeField] GameObject windowManager;
+    [SerializeField] GameObject hospitalBed;
+    [SerializeField] GameObject hospitalPlant;
 
     [SerializeField] GameObject trigger;
 
@@ -16,7 +18,6 @@ public class FirstRoom : MonoBehaviour
 
     [SerializeField] AudioSource hallucinationSource;
     [SerializeField] AudioClip heartMonitor1;
-    [SerializeField] AudioClip heartMonitor2;
     [SerializeField] GameObject enemySprite;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,16 +39,17 @@ public class FirstRoom : MonoBehaviour
         windowManager.SetActive(false);
         shelf.SetActive(false);
         Thunder.SetActive(false);
+        hospitalBed.SetActive(true);
+        hospitalPlant.SetActive(true);
         hallucinationSource.clip = heartMonitor1;
         hallucinationSource.Play();
-        yield return new WaitForSeconds(4f);
-        hallucinationSource.Stop();
-        hallucinationSource.PlayOneShot(heartMonitor2);
-        yield return new WaitForSeconds(heartMonitor2.length);
+        yield return new WaitForSeconds(10f);
         hallucinationSource.Stop();
         enemySprite.SetActive(true);
         yield return new WaitForSeconds(0.1f);
         enemySprite.SetActive(false);
+        hospitalPlant.SetActive(false);
+        hospitalBed.SetActive(false);
         wall1.color = new Color32(223, 113, 38, 255);
         wall2.color = new Color32(223, 113, 38, 255);
         wall3.color = new Color32(223, 113, 38, 255);

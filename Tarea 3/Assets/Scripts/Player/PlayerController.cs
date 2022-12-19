@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
             playerAnim.SetFloat("lastY", y);
         }
 
-        transform.position += new Vector3(x, y).normalized * playerSpeed * Time.deltaTime;
+        transform.position += playerSpeed * Time.deltaTime * new Vector3(x, y).normalized;
         
     }
 
