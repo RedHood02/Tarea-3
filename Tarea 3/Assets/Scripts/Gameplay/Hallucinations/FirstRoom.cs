@@ -18,7 +18,7 @@ public class FirstRoom : MonoBehaviour
 
     [SerializeField] AudioSource hallucinationSource;
     [SerializeField] AudioClip heartMonitor1;
-    [SerializeField] GameObject enemySprite;
+    [SerializeField] GameObject enemyPref;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,6 +27,28 @@ public class FirstRoom : MonoBehaviour
             rainBackground = GameObject.Find("RainBackground");
             StartCoroutine(Hallucination());
         }
+    }
+
+    private void Update()
+    {
+        Vector2 pos = gameObject.transform.position;
+        Vector2 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+        float distace = Vector2.Distance(pos, playerPos);
+        if(distace <= 0.5)
+        {
+            StopAllCoroutines();
+            enemyPref.SetActive(false);
+            hospitalPlant.SetActive(false);
+            hospitalBed.SetActive(false);
+            wall1.color = new Color32(223, 113, 38, 255);
+            wall2.color = new Color32(223, 113, 38, 255);
+            wall3.color = new Color32(223, 113, 38, 255);
+            rainBackground.SetActive(true);
+            Thunder.SetActive(true);
+            shelf.SetActive(true);
+            windowManager.SetActive(true);
+            Destroy(gameObject);
+        }    
     }
 
 
@@ -45,9 +67,9 @@ public class FirstRoom : MonoBehaviour
         hallucinationSource.Play();
         yield return new WaitForSeconds(10f);
         hallucinationSource.Stop();
-        enemySprite.SetActive(true);
-        yield return new WaitForSeconds(0.1f);
-        enemySprite.SetActive(false);
+        enemyPref.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        enemyPref.SetActive(false);
         hospitalPlant.SetActive(false);
         hospitalBed.SetActive(false);
         wall1.color = new Color32(223, 113, 38, 255);

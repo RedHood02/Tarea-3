@@ -56,7 +56,10 @@ public class Thunder : MonoBehaviour
         thunderSFX.PlayOneShot(thunder1); //Distant
         thunderLight.intensity = 0.75f;
         yield return new WaitForSeconds(2f);
-        thunderLight.intensity = 0f;
+        if(thunderLight != null)
+        {
+            thunderLight.intensity = 0f;
+        }
         yield break;
     }
 
@@ -65,7 +68,10 @@ public class Thunder : MonoBehaviour
         thunderSFX.PlayOneShot(thunder2); //Very Distant
         thunderLight.intensity = 0.55f;
         yield return new WaitForSeconds(2f);
-        thunderLight.intensity = 0f;
+        if (thunderLight != null)
+        {
+            thunderLight.intensity = 0f;
+        }
         yield break;
     }
 
@@ -74,7 +80,10 @@ public class Thunder : MonoBehaviour
         thunderSFX.PlayOneShot(thunder3); //Close
         thunderLight.intensity = 1f;
         yield return new WaitForSeconds(3f);
-        thunderLight.intensity = 0f;
+        if (thunderLight != null)
+        {
+            thunderLight.intensity = 0f;
+        }
         yield break;
     }
 
