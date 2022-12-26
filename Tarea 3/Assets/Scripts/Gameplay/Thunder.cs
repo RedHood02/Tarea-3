@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal;
 
 public class Thunder : MonoBehaviour
 {
-    [SerializeField] Light2D thunderLight;
+    [SerializeField] Light2D thunderLight, thunderLight2;
 
     [SerializeField] AudioSource thunderSFX;
     [SerializeField] AudioClip thunder1;
@@ -24,11 +24,9 @@ public class Thunder : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(2f, 4f));
             int value = Random.Range(0, 5);
-            Debug.Log(value);
             if(value == 1)
             {
                 int value2 = Random.Range(1, 3);
-                Debug.Log(value2);
                 if(value2 == 1)
                 {
                     StartCoroutine(Thunder1());
@@ -54,10 +52,15 @@ public class Thunder : MonoBehaviour
     IEnumerator Thunder1()
     {
         thunderSFX.PlayOneShot(thunder1); //Distant
-        thunderLight.intensity = 0.75f;
-        yield return new WaitForSeconds(2f);
-        if(thunderLight != null)
+        if (thunderLight != null && thunderLight2 != null)
         {
+            thunderLight2.intensity = 0.75f;
+            thunderLight.intensity = 0.75f;
+        }
+        yield return new WaitForSeconds(2f);
+        if(thunderLight != null && thunderLight2 != null)
+        {
+            thunderLight2.intensity = 0f;
             thunderLight.intensity = 0f;
         }
         yield break;
@@ -66,10 +69,15 @@ public class Thunder : MonoBehaviour
     IEnumerator Thunder2()
     {
         thunderSFX.PlayOneShot(thunder2); //Very Distant
-        thunderLight.intensity = 0.55f;
-        yield return new WaitForSeconds(2f);
-        if (thunderLight != null)
+        if (thunderLight != null && thunderLight2)
         {
+            thunderLight2.intensity = 0.55f;
+            thunderLight.intensity = 0.55f;
+        }
+        yield return new WaitForSeconds(2f);
+        if (thunderLight != null && thunderLight2 != null)
+        {
+            thunderLight2.intensity = 0f;
             thunderLight.intensity = 0f;
         }
         yield break;
@@ -78,10 +86,15 @@ public class Thunder : MonoBehaviour
     IEnumerator Thunder3()
     {
         thunderSFX.PlayOneShot(thunder3); //Close
-        thunderLight.intensity = 1f;
-        yield return new WaitForSeconds(3f);
-        if (thunderLight != null)
+        if (thunderLight != null && thunderLight2 != null)
         {
+            thunderLight2.intensity = 1f;
+            thunderLight.intensity = 1f;
+        }
+        yield return new WaitForSeconds(3f);
+        if (thunderLight != null && thunderLight2 != null)
+        {
+            thunderLight2.intensity = 0f;
             thunderLight.intensity = 0f;
         }
         yield break;

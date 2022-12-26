@@ -13,7 +13,7 @@ public class CinematicEndSceneChange : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(12f);
+        yield return new WaitForSeconds(28.5167f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

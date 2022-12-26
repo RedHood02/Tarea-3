@@ -41,7 +41,10 @@ public class PlayerController : MonoBehaviour
         
     }
 
-
+    public void Death()
+    {
+        Destroy(gameObject);
+    }
     void GetVelocity()
     {
         newPos = gameObject.transform.position;

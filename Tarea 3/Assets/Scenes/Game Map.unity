@@ -3376,6 +3376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thunderLight: {fileID: 1150448920}
+  thunderLight2: {fileID: 0}
   thunderSFX: {fileID: 974244610}
   thunder1: {fileID: 8300000, guid: 435bd893c3e342641bb38f0b52ee1cd2, type: 3}
   thunder2: {fileID: 8300000, guid: b45dd0f26a9668045ba5166afe8a4d82, type: 3}
